@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Pro - Documentation</title>
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --code-bg: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+        }
+        
+        code {
+            background: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        
+        .tip {
+            background: #e0e7ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Assistant Pro - Documentation</h1>
+    
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#text-images">Editing Text & Images</a></li>
+        <li><a href="#colors-styles">Changing Colors & Styles</a></li>
+        <li><a href="#components">Customizing Components</a></li>
+        <li><a href="#social-icons">Social Media Icons</a></li>
+        <li><a href="#additional">Additional Customization</a></li>
+    </ul>
+
+    <h2 id="text-images">1. Editing Text & Images</h2>
+    <p>All text content can be found in the <code>index.html</code> file. To modify:</p>
+    <ul>
+        <li>Open <code>index.html</code> in your code editor</li>
+        <li>Find the section you want to edit (sections are clearly commented)</li>
+        <li>Update the text within the HTML tags</li>
+    </ul>
+    
+    <div class="tip">
+        <strong>Tip:</strong> For SEO optimization, make sure to update meta tags in the <code>&lt;head&gt;</code> section.
+    </div>
+    
+    <h3>Updating Images</h3>
+    <pre><code><!-- Image example -->
+&lt;img src="path/to/your/image.jpg" alt="Descriptive text"&gt;</code></pre>
+    
+    <h2 id="colors-styles">2. Changing Colors & Styles</h2>
+    <p>Colors and styles are defined in <code>css/styles.css</code> using CSS variables:</p>
+    <pre><code>:root {
+    --primary-color: #6366f1;
+    --secondary-color: #ec4899;
+    --accent-color: #06b6d4;
+    /* Add more custom colors here */
+}</code></pre>
+    
+    <h2 id="components">3. Customizing Components</h2>
+    
+    <h3>Email Input Customization</h3>
+    <p>The email input styling can be modified in <code>css/styles.css</code>:</p>
+    <pre><code>.newsletter-form input {
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    /* Add custom styles */
+}</code></pre>
+    
+    <h3>Dark Mode Toggle</h3>
+    <p>The dark mode toggle button can be customized:</p>
+    <pre><code>.dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--gray-200);
+    /* Modify appearance */
+}</code></pre>
+    
+    <h2 id="social-icons">4. Replacing the X (Twitter) Logo</h2>
+    <p>The X logo is implemented as an SVG in <code>x-logo.svg</code>. To update:</p>
+    <ol>
+        <li>Replace the <code>x-logo.svg</code> file with your custom version</li>
+        <li>Update the HTML in <code>index.html</code>:</li>
+    </ol>
+    <pre><code>&lt;img src="x-logo.svg" alt="X (formerly Twitter)" class="social-icon x-icon"&gt;</code></pre>
+    
+    <h2 id="additional">5. Additional Customization</h2>
+    <h3>Responsive Breakpoints</h3>
+    <p>The template uses these breakpoints:</p>
+    <ul>
+        <li>Mobile: <code>max-width: 768px</code></li>
+        <li>Tablet: <code>max-width: 992px</code></li>
+        <li>Desktop: <code>min-width: 993px</code></li>
+    </ul>
+    
+    <h3>Adding Custom Fonts</h3>
+    <p>To use custom fonts:</p>
+    <ol>
+        <li>Add font imports to <code>&lt;head&gt;</code> in <code>index.html</code></li>
+        <li>Update the font variables in <code>css/styles.css</code>:</li>
+    </ol>
+    <pre><code>:root {
+    --body-font: 'Your Font', sans-serif;
+    --heading-font: 'Your Heading Font', sans-serif;
+}</code></pre>
+    
+    <div class="tip">
+        <strong>Need Help?</strong> For additional support or questions, please refer to our support documentation or contact our team.
+    </div>
+</body>
+</html> 

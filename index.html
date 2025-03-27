@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Assistant Pro - Your Intelligent Automation Solution</title>
+    <meta name="description" content="Transform your workflow with AI Assistant Pro. Automate tasks, integrate systems, and boost productivity with our intelligent AI solution.">
+    <!-- <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    
+        document.addEventListener("keydown", function (e) {
+            if (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c" || e.key === "x")) {
+                e.preventDefault();
+            }
+        });
+    </script> -->
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712027.png">
+    
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/4712/4712027.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1693/1693746.png" alt="AI Assistant Pro Logo" height="30">
+                    <span>AI Assistant Pro</span>
+                </a>
+                
+                <div class="nav-right">
+                    <button id="darkModeToggle" class="dark-mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up">Transform Your Workflow with AI</h1>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        Automate tasks, integrate systems, and boost productivity with our intelligent AI solution.
+                    </p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png" alt="AI Assistant Pro Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to streamline your workflow and boost productivity</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2021/2021898.png" alt="Automation Icon">
+                    </div>
+                    <h3>AI Automation</h3>
+                    <p>Automate repetitive tasks and workflows with intelligent AI algorithms</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1175/1175553.png" alt="Integration Icon">
+                    </div>
+                    <h3>System Integration</h3>
+                    <p>Seamlessly connect with your favorite tools and platforms</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1247/1247767.png" alt="Analytics Icon">
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Get detailed insights and reports on your workflow performance</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2092/2092665.png" alt="Security Icon">
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade security with end-to-end encryption</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How It Works</h2>
+                <p>Get started in minutes with our simple setup process</p>
+            </div>
+            
+            <div class="steps-wrapper">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Connect Tools">
+                        <h3>Connect Your Tools</h3>
+                        <p>Integrate your existing tools and platforms with our AI assistant</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3273/3273032.png" alt="Configure AI">
+                        <h3>Configure AI</h3>
+                        <p>Set up your automation rules and preferences</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png" alt="Automate">
+                        <h3>Let AI Work</h3>
+                        <p>Watch as our AI automates your tasks and boosts productivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that's right for your team</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="amount">$29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for individuals and small teams</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 team members</li>
+                            <li><i class="fas fa-check"></i> Basic automation</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                            <li><i class="fas fa-check"></i> 5GB storage</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="amount">$79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for growing businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 20 team members</li>
+                            <li><i class="fas fa-check"></i> Advanced automation</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> 50GB storage</li>
+                            <li><i class="fas fa-check"></i> Custom integrations</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                        <p>For large organizations</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited team members</li>
+                            <li><i class="fas fa-check"></i> Custom automation</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                            <li><i class="fas fa-check"></i> Unlimited storage</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                            <li><i class="fas fa-check"></i> Custom development</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Users Say</h2>
+                <p>Join thousands of satisfied customers who have transformed their workflow</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "AI Assistant Pro has completely transformed how we work. The automation features have saved us countless hours."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The integration capabilities are impressive. We've connected all our tools seamlessly."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4333/4333607.png" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>CTO, GrowthLabs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The analytics have given us valuable insights into our workflow efficiency."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4333/4333613.png" alt="Emily Rodriguez">
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>Operations Manager, InnovateCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about AI Assistant Pro</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>How does AI Assistant Pro work?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>AI Assistant Pro uses advanced machine learning algorithms to understand your workflow and automate repetitive tasks. It integrates with your existing tools and learns from your preferences to provide personalized automation solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Is my data secure?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we take security seriously. All data is encrypted using industry-standard protocols, and we never store sensitive information. Our platform is compliant with GDPR and other major data protection regulations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Can I cancel my subscription?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel your subscription at any time. We offer a 30-day money-back guarantee if you're not satisfied with our service.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>What kind of support do you offer?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer multiple support channels including email, live chat, and phone support depending on your plan. Our support team is available 24/7 for enterprise customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1693/1693746.png" alt="AI Assistant Pro Logo" height="30">
+                        <span>AI Assistant Pro</span>
+                    </div>
+                    <p>Transform your workflow with intelligent AI automation</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
+                            <img src="x-logo.svg" alt="X (formerly Twitter)" class="social-icon x-icon" width="24" height="24">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">About Us</a></li>
+                            <li><a href="javascript:void(0);">Blog</a></li>
+                            <li><a href="javascript:void(0);">Careers</a></li>
+                            <li><a href="javascript:void(0);">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">Documentation</a></li>
+                            <li><a href="javascript:void(0);">API Reference</a></li>
+                            <li><a href="javascript:void(0);">Support</a></li>
+                            <li><a href="javascript:void(0);">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest updates and features</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <div class="form-message" id="form-message"></div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Assistant Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
+ 
